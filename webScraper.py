@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 from selenium import webdriver
 import sys
 import json
-chromedriver = "C:/Users/Parakh Gupta/Downloads/setups/chromedriver"
+chromedriver = "C:/Users/Downloads/setups/chromedriver"
 chromedriver = os.path.expanduser(chromedriver)
 print('chromedriver path: {}'.format(chromedriver))
 sys.path.append(chromedriver)
