@@ -1,27 +1,14 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
-
-
 import os
 from bs4 import BeautifulSoup
 from selenium import webdriver
 import sys
 import json
-
-
-# In[2]:
-
-
-chromedriver = "C:/Users/Parakh Gupta/Downloads/setups/chromedriver" # path to the chromedriver executable
+chromedriver = "C:/Users/Parakh Gupta/Downloads/setups/chromedriver"
 chromedriver = os.path.expanduser(chromedriver)
 print('chromedriver path: {}'.format(chromedriver))
 sys.path.append(chromedriver)
 driver = webdriver.Chrome(chromedriver)
 
-
-# In[3]:
 
 
 def get_house_links( driver):
@@ -146,14 +133,8 @@ with open("data.json", mode='w', encoding='utf-8') as f:
     json.dump(v,f)
 
 
-# In[ ]:
-
 
 get_house_links(driver)
-
-
-# In[ ]:
-
 
 
 
